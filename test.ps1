@@ -19,7 +19,7 @@ function Log-Websites {
     $logFile = "C:\path\to\your\logfile.txt"
     $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     $website = "example.com" # Replace with actual website tracking logic
-    Add-Content -Path $logFile -Value "$date: $website"
+    Add-Content -Path $logFile -Value "${date}: ${website}"
 }
 
 # Example usage
